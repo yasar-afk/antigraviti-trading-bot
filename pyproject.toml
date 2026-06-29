@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "antigraviti-trading-bot"
+version = "1.0.0"
+description = "Antigraviti - Otonom kripto trading botu"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "yasar-afk"}
+]
+dependencies = [
+    "ccxt==4.3.89",
+    "pandas==2.2.2",
+    "numpy==1.26.4",
+    "ta==0.11.0",
+    "pydantic==2.7.1",
+    "pydantic-settings==2.3.0",
+    "python-dotenv==1.0.1",
+    "PyYAML==6.0.1",
+    "APScheduler==3.10.4",
+    "colorlog==6.8.2",
+]
+
+[project.scripts]
+antigraviti = "main:main"
