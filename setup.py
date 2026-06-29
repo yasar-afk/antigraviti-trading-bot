@@ -10,13 +10,13 @@ with open("requirements.txt", "r", encoding="utf-8") as f:
     ]
 
 setup(
-    name="antigraviti-trading-bot",
+    name="trading-bot",
     version="1.0.0",
     author="yasar-afk",
-    description="Antigraviti - Otonom kripto trading botu",
+    description="Otonom kripto trading botu",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yasar-afk/antigraviti-trading-bot",
+    url="https://github.com/yasar-afk/trading-bot",
     py_modules=["main", "config"],
     packages=find_packages(),
     python_requires=">=3.9",
@@ -34,7 +34,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "antigraviti=main:main",
+            "trading-bot=main:main",
         ],
     },
 )

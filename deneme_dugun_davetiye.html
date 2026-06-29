@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düğün Davetiyesi - Elif & Ahmet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #fdf6f9 0%, #f5e6f0 50%, #e8f4f8 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .invitation-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(186, 153, 174, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .floral-top {
+            height: 120px;
+            background: linear-gradient(180deg, #f8e8ef 0%, transparent 100%);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .flower-decoration {
+            font-size: 60px;
+            margin-bottom: -30px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        .content {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #c9a7b8;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .couple-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #8b6b7d;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .ampersand {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 36px;
+            color: #d4a5c7;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .invitation-text {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 18px;
+            color: #9b7a8c;
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4a5c7, transparent);
+            margin: 30px auto;
+        }
+
+        .event-details {
+            background: linear-gradient(135deg, #faf0f5 0%, #f0f7fa 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .detail-item {
+            margin: 20px 0;
+        }
+
+        .detail-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #b89aab;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .detail-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #7a5a6c;
+        }
+
+        .date-highlight {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8b6b7d;
+        }
+
+        .venue-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #9b7a8c;
+            margin-top: 5px;
+        }
+
+        .rsvp-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px dashed #e8d5df;
+        }
+
+        .rsvp-button {
+            display: inline-block;
+            padding: 15px 50px;
+            background: linear-gradient(135deg, #e8b4d0 0%, #c9a7b8 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(200, 167, 184, 0.4);
+        }
+
+        .rsvp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(200, 167, 184, 0.5);
+        }
+
+        .floral-bottom {
+            height: 80px;
+            background: linear-gradient(0deg, #f8e8ef 0%, transparent 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .footer-message {
+            font-style: italic;
+            color: #b89aab;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #f5e6f0 0%, #e8f4f8 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid #f0d9e8;
+            box-shadow: 0 10px 30px rgba(186, 153, 174, 0.2);
+        }
+
+        .photo-placeholder {
+            font-size: 80px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 500px) {
+            .couple-names {
+                font-size: 36px;
+            }
+            .content {
+                padding: 50px 25px;
+            }
+            .detail-value {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <div class="floral-top">
+            <div class="flower-decoration">🌸</div>
+        </div>
+        
+        <div class="content">
+            <p class="subtitle">Düğün Davetiyesi</p>
+            
+            <div class="photo-frame">
+                <span class="photo-placeholder">💑</span>
+            </div>
+            
+            <h1 class="couple-names">
+                Elif
+                <span class="ampersand">&</span>
+                Ahmet
+            </h1>
+            
+            <p class="invitation-text">
+                Bir ömür boyu sürecek mutluluğumuzun başlangıcında<br>
+                sizleri de aramızda görmekten onur duyarız.
+            </p>
+            
+            <div class="divider"></div>
+            
+            <div class="event-details">
+                <div class="detail-item">
+                    <p class="detail-label">Tarih</p>
+                    <p class="detail-value date-highlight">15 Eylül 2025</p>
+                    <p class="detail-value">Cumartesi</p>
+                </div>
+                
+                <div class="detail-item">
+                    <p class="detail-label">Saat</p>
+                    <p class="detail-value">16:00</p>
+                </div>
+                
+                <div class="detail-item">
+                    <p class="detail-label">Mekan</p>
+                    <p class="venue-name">Grand Palace Düğün Salonu</p>
+                    <p class="detail-value" style="font-size: 14px; margin-top: 5px;">Atatürk Caddesi No:45, İstanbul</p>
+                </div>
+            </div>
+            
+            <div class="rsvp-section">
+                <p class="invitation-text" style="margin-bottom: 20px; font-size: 16px;">
+                    Katılımınızı rica ederiz
+                </p>
+                <a href="#" class="rsvp-button">Katılacağım</a>
+                <p class="footer-message">Lütfen en geç 1 Eylül'e kadar yanıtlayınız</p>
+            </div>
+        </div>
+        
+        <div class="floral-bottom">
+            <div class="flower-decoration" style="font-size: 40px; margin-top: 10px;">🌺</div>
+        </div>
+    </div>
+</body>
+</html>

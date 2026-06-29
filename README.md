@@ -1,4 +1,4 @@
-# 🚀 Antigraviti Trading Bot
+# 🚀 Trading Bot
 
 Otonom kripto trading botu - Binance Futures üzerinde otomatik alım-satım yapan Python tabanlı sistem.
 
@@ -24,8 +24,8 @@ Otonom kripto trading botu - Binance Futures üzerinde otomatik alım-satım yap
 
 ```bash
 # 1. Depoyu klonla
-git clone https://github.com/yasar-afk/antigraviti-trading-bot.git
-cd antigraviti-trading-bot
+git clone https://github.com/yasar-afk/trading-bot.git
+cd trading-bot
 
 # 2. Sanal ortam oluştur
 python -m venv venv
@@ -115,7 +115,7 @@ Mum grafiği oluştur → İndikatörleri hesapla → MiMo'ya gönder
 ## 📁 Proje Yapısı
 
 ```
-antigraviti-trading-bot/
+trading-bot/
 ├── main.py                 # Ana bot (V5)
 ├── main_v5.py              # V5 varyantı
 ├── main_v7.py              # V7 varyantı
@@ -196,4 +196,4 @@ MIT License - Detaylı bilgi için [LICENSE](LICENSE) dosyasına bakın.
 
 ---
 
-**Antigraviti** — MiMoCode tarafından geliştirildi 🚀
+**Trading Bot** — MiMoCode tarafından geliştirildi 🚀

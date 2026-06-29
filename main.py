@@ -28,7 +28,7 @@ from src.data.collector import DataCollector
 from src.bot.engine import BotEngine
 from src.utils.logger import get_logger
 
-logger = get_logger("antigraviti.main")
+logger = get_logger("trading-bot.main")
 
 
 def parse_args() -> argparse.Namespace:
